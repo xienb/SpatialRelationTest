@@ -5,8 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SpatialRelationTest"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="601" Width="600">
     <Grid>
-        
+    <Canvas x:Name="myCanvas"
+            Width="400" Height="400" Background="Gray" 
+            MouseLeftButtonDown="myCanvas_MouseLeftButtonDown" MouseLeftButtonUp="myCanvas_MouseLeftButtonUp" MouseMove="myCanvas_MouseMove">
+            <Image x:Name="myImage" Width="400" Height="400" ></Image>
+    </Canvas>
     </Grid>
 </Window>
